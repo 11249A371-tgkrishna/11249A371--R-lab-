@@ -8,6 +8,7 @@ name
 cgpa
 pass
 
+
 2. Scenario:
 A company wants to store employee ID, monthly salary, department name, and permanent
 employee status.
