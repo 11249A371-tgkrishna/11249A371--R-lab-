@@ -1,0 +1,1978 @@
+1. SCENARIO :A college wants to store a student s roll number, name, CGPA, and pass status.
+roll_no <- 201 # Integer
+name <- "AKASH" # Character
+cgpa <- 5.45 # Numeric
+pass <- FALSE # Logical
+roll_no
+name
+cgpa
+pass
+
+2. Scenario:
+A company wants to store employee ID, monthly salary, department name, and permanent
+employee status.
+emp_id <- 2051
+salary <- 25000.75
+department <- "DSA"
+is_permanent <- FALSE
+emp_id
+salary
+department
+is_permanent
+3. Scenario:
+An e-commerce application needs to store product price, product name, available stock, and
+discount eligibility.
+product_name <- "IPHONE"
+price <- 55000
+stock_available <- 25
+discount_eligible <- TRUE
+product_name
+price
+stock_available
+discount_eligible
+
+4.Scenario:
+A weather station records temperature, city name, rainfall status, and wind speed.
+city <- "Chennai"
+temperature <- 36.5
+rain <- FALSE
+wind_speed <- 12.8
+city
+temperature
+rain
+wind_speed
+5.Scenario:
+An exam cell stores subject name, total marks, marks obtained, and result status
+subject <- "Mathematics"
+total_marks <- 100
+marks_obtained <- 78
+result <- marks_obtained >= 40
+subject
+total_marks
+marks_obtained
+result
+
+6.Banking Application
+Scenario:
+A bank stores account number, account holder name, balance, and active account status.
+
+account_no <- 123456789
+holder_name <- "Ravi Kumar"
+balance <- 25000.50
+account_active <- TRUE
+account_no
+holder_name
+balance
+account_active
+Question
+7:
+Movie Rating System
+Scenario:
+A movie app stores movie title, rating, number of reviews, and availability 
+
+movie_title <- "Inception"
+rating <- 8.8
+reviews <- 1200
+available <- TRUE
+movie_title
+rating
+reviews
+available
+ 
+8:
+Traffic Monitoring System
+Scenario:
+Traffic data includes vehicle count, location name, average speed, and congestion status.
+
+vehicle_count <- 350
+location <- "Highway Road"
+avg_speed <- 45.6
+congested <- TRUE
+vehicle_count
+location
+avg_speed
+congested
+
+
+ EXCERSICE 2 :.Operators & Decision Making in R,
+1:
+Loan Eligibility Check
+Scenario:
+A bank provides loans only if the applicant s age is above 21 and monthly income is more than
+₹30,000.
+
+age <- 25
+income <- 35000
+if(age > 21 & income > 30000){
+print("Eligible for Loan")
+} else {
+print("Not Eligible for Loan")
+}
+
+
+2:
+Attendance Requirement
+Scenario:
+A student is allowed to write the exam only if attendance is at least 75%.
+
+attendance <- 78
+ 
+if(attendance >= 75){
+print("Eligible for Exam")
+} else {
+print("Not Eligible for Exam")
+}
+
+
+
+3:
+Online Discount System
+Scenario:
+An online store gives a discount if the purchase amount exceeds ₹5,000 or the user is a premium
+member.
+
+amount <- 4200
+premium_member <- TRUE
+if(amount > 5000 | premium_member){
+print("Discount Applied")
+} else {
+print("No Discount")
+}
+ 
+
+
+4:
+Electricity Bill Slab
+Scenario:
+Electricity charges depend on units consumed:
+Less than 100 → Low usage
+100 300 → Medium usage
+Above 300 → High usage
+
+units <- 250
+if(units < 100){
+print("Low Usage")
+} else if(units <= 300){
+print("Medium Usage")
+} else {
+print("High Usage")
+}
+ 
+
+5:
+Employee Bonus Eligibility
+Scenario:
+An employee receives a bonus if experience is more than 5 years and performance rating is above 4.
+
+experience <- 6
+rating <- 4.5
+ 
+if(experience > 5 & rating > 4){
+print("Bonus Eligible")
+} else {
+print("Not Eligible for Bonus")
+}
+ 
+
+6:
+Password Validation
+Scenario:
+A system validates a password only if its length is at least 8 characters.
+
+password <- "secure123"
+ 
+if(nchar(password) >= 8){
+print("Valid Password")
+} else {
+print("Invalid Password")
+}
+
+
+
+
+7:
+Temperature Warning System
+Scenario:
+A warning is issued if temperature is below 0 C or above 40 C.
+
+temperature <- 45
+if(temperature < 0 | temperature > 40){
+print("Extreme Temperature Warning")
+} else {
+print("Normal Temperature")
+}
+
+
+
+8:
+Grading System
+Scenario:
+Grades are assigned based on marks:
+≥ 90 → A
+≥ 75 → B
+≥ 50 → C
+< 50 → Fail
+
+marks <- 82
+if(marks >= 90){
+grade <- "A"
+} else if(marks >= 75){
+grade <- "B"
+} else if(marks >= 50){
+grade <- "C"
+} else {
+grade <- "Fail"
+}
+print(grade)
+
+
+  
+
+9:
+Bank Credit Card Approval System
+Scenario:
+A bank approves a credit card based on the following rules:
+Age must be between 21 and 60
+Monthly income ≥ ₹25,000
+Credit score ≥ 700
+
+age <- 35
+income <- 40000
+credit_score <- 720
+if(age >= 21 & age <= 60 & income >= 25000 & credit_score >= 700){
+print("Credit Card Approved")
+} else {
+print("Credit Card Rejected")
+}
+ 
+
+10:
+Hospital Patient Risk Classification
+Scenario:
+A hospital classifies patients as:
+High Risk → BP > 140 AND Sugar > 200
+Medium Risk → BP 120 140 OR Sugar 140 200
+Low Risk → Otherwise
+
+bp <- 150
+ 
+sugar <- 210
+if(bp > 140 & sugar > 200){
+risk <- "High Risk"
+} else if((bp >= 120 & bp <= 140) | (sugar >= 140 & sugar <= 200)){
+risk <- "Medium Risk"
+} else {
+risk <- "Low Risk"
+}
+print(risk)
+
+
+
+
+11:
+Smart Traffic Signal Control
+Scenario:
+A smart traffic system changes signal duration based on vehicle count:
+200 vehicles → Long Green Signal
+100 200 vehicles → Medium Green Signal
+< 100 vehicles → Short Green Signal
+
+vehicle_count <- 180
+if(vehicle_count > 200){
+print("Long Green Signal")
+} else if(vehicle_count >= 100){
+print("Medium Green Signal")
+} else {
+print("Short Green Signal")
+}
+
+
+  
+
+12:
+Employee Performance Appraisal System
+Scenario:
+An employee is rated based on:
+Attendance ≥ 90%
+Performance score ≥ 8
+Project completion = TRUE
+All conditions must be satisfied.
+
+attendance <- 92
+performance <- 8.5
+project_completed <- TRUE
+if(attendance >= 90 & performance >= 8 & project_completed){
+print("Eligible for Appraisal")
+} else {
+print("Not Eligible for Appraisal")
+}
+
+
+
+
+13:
+Online Exam Proctoring System
+Scenario:
+A student is disqualified if:
+Face not detected OR
+Multiple persons detected OR
+Internet disconnected
+
+face_detected <- TRUE
+multiple_faces <- FALSE
+internet_connected <- TRUE
+if(!face_detected | multiple_faces | !internet_connected){
+print("Exam Disqualified")
+} else {
+print("Exam Allowed")
+}
+ 
+
+14:
+Dynamic Pricing in Ride-Hailing Ap
+Scenario:
+Surge pricing is applied if:
+Demand is high AND
+Available drivers < 50
+
+high_demand <- TRUE
+available_drivers <- 30
+ 
+if(high_demand & available_drivers < 50){
+print("Surge Pricing Applied")
+} else {
+print("Normal Pricing")
+}
+
+
+15:
+Industrial Machine Safety System
+Scenario:
+A machine must shut down if:
+Temperature > 80 C OR
+Pressure > 120 units OR
+Vibration level > 7
+
+temperature <- 75
+pressure <- 130
+vibration <- 6
+if(temperature > 80 | pressure > 120 | vibration > 7){
+print("Machine Shutdown")
+} else {
+print("Machine Running Normally")
+}
+
+
+16:
+University Admission Screening
+Scenario:
+Admission is granted if:
+Entrance score ≥ 70
+12th marks ≥ 75
+Age ≤ 25
+
+entrance_score <- 78
+twelfth_marks <- 82
+age <- 22
+if(entrance_score >= 70 & twelfth_marks >= 75 & age <= 25){
+print("Admission Granted")
+} else {
+print("Admission Rejected")
+}
+ 
+EXCERSICE 3:Learn the basics of functions in R and implement with examples.
+
+1:
+Bank Interest Calculator
+Scenario:
+A bank needs a reusable function to calculate simple interest for different customers.
+
+simple_interest <- function(p, r, t){
+si <- (p * r * t) / 100
+return(si)
+}
+simple_interest(10000, 5, 2)
+ 
+
+2:
+Student Result Processing
+Scenario:
+A university wants a function to determine whether a student has passed or failed based on marks.
+
+ 
+check_result <- function(marks){
+if(marks >= 40){
+return("Pass")
+} else {
+return("Fail")
+}
+}
+check_result(65)
+
+
+
+3:
+Employee Salary Calculation
+Scenario:
+An HR system calculates net salary after deducting tax.
+
+net_salary <- function(basic_salary){
+tax <- basic_salary * 0.10
+net <- basic_salary - tax
+return(net)
+}
+net_salary(30000)
+ 
+
+4:
+Electricity Bill Generator
+Scenario:
+Electricity charges depend on units consumed:
+First 100 units → ₹2/unit
+Next 100 units → ₹3/unit
+Above 200 units → ₹5/unit
+
+electricity_bill <- function(units){
+if(units <= 100){
+bill <- units * 2
+} else if(units <= 200){
+bill <- (100 * 2) + (units - 100) * 3
+} else {
+bill <- (100 * 2) + (100 * 3) + (units - 200) * 5
+}
+return(bill)
+}
+electricity_bill(250)
+ 
+
+5:
+Online Shopping Discount
+Scenario:
+An online store applies a discount:
+20% if amount ≥ ₹5000
+10% if amount ≥ ₹2000
+No discount otherwise
+
+final_amount <- function(amount){
+if(amount >= 5000){
+discount <- amount * 0.20
+} else if(amount >= 2000){
+discount <- amount * 0.10
+} else {
+discount <- 0
+}
+return(amount - discount)
+}
+final_amount(4500)
+ 
+
+6:
+Temperature Conversion System
+Scenario:
+A weather app converts temperature from Celsius to Fahrenheit.
+
+ 
+celsius_to_fahrenheit <- function(c){
+f <- (c * 9/5) + 32
+return(f)
+}
+celsius_to_fahrenheit(37)
+
+
+7:
+Grading System
+Scenario:
+Grades are assigned using a function:
+≥ 90 → A
+≥ 75 → B
+≥ 50 → C
+< 50 → Fail
+
+assign_grade <- function(marks){
+if(marks >= 90){
+"A"
+} else if(marks >= 75){
+"B"
+} else if(marks >= 50){
+"C"
+} else {
+"Fail"
+}
+}
+assign_grade(88)
+ 
+
+8:
+Voting Eligibility Checker
+Scenario:
+An election system checks whether a person is eligible to vote.
+
+check_voting <- function(age){
+if(age >= 18){
+return("Eligible to Vote")
+} else {
+return("Not Eligible to Vote")
+}
+}
+check_voting(17)
+ 
+
+9:
+Bank Loan EMI Calculator System
+Scenario
+A banking system needs a function to calculate EMI (Equated Monthly Installment) based on:
+Principal amount
+Annual interest rate
+Loan tenure (in years)
+
+calculate_emi <- function(principal, rate, years){
+monthly_rate <- rate / (12 * 100)
+months <- years * 12
+emi <- (principal * monthly_rate * (1 + monthly_rate)^months) /
+((1 + monthly_rate)^months - 1)
+ 
+return(round(emi, 2))
+}
+calculate_emi(500000, 7.5, 10)
+ 
+
+10:
+Hospital Patient Billing System
+Scenario
+A hospital calculates total bill using:
+Consultation fee
+Room charges per day
+Number of days 
+5% tax on total amount
+
+hospital_bill <- function(consultation, room_charge, days){
+subtotal <- consultation + (room_charge * days)
+tax <- subtotal * 0.05
+total <- subtotal + tax
+return(total)
+}
+hospital_bill(500, 2000, 3)
+
+  
+
+11:
+Online Shopping Order Processing System
+Scenario
+An e-commerce platform calculates final order amount based on:
+Total cart value
+Discount (10% if cart ≥ ₹3000)
+Delivery fee (₹0 if cart ≥ ₹5000, else ₹100)
+
+order_total <- function(cart_value){
+if(cart_value >= 3000){
+discount <- cart_value * 0.10
+} else {
+discount <- 0
+}
+if(cart_value >= 5000){
+delivery <- 0
+} else {
+delivery <- 100
+}
+final_amount <- cart_value - discount + delivery
+return(final_amount)
+}
+order_total(4200)
+
+              
+
+12:
+University GPA Calculation System
+Scenario
+A university calculates GPA using marks of 5 subjects:
+Average ≥ 85 → Distinction
+Average ≥ 70 → First Class
+Average ≥ 50 → Second Class
+Else → Fail
+
+calculate_gpa <- function(marks){
+avg <- mean(marks)
+if(avg >= 85){
+result <- "Distinction"
+} else if(avg >= 70){
+result <- "First Class"
+} else if(avg >= 50){
+result <- "Second Class"
+} else {
+result <- "Fail"
+}
+return(result)
+}
+calculate_gpa(c(78, 85, 90, 72, 80))
+ 
+ 
+13:
+Smart Electricity Meter System
+Scenario
+A smart meter calculates bill based on peak and off-peak usage:
+Peak units → ₹6/unit
+Off-peak units → ₹3/unit
+10% surcharge if total units > 300
+ 
+
+smart_meter_bill <- function(peak_units, offpeak_units){
+bill <- (peak_units * 6) + (offpeak_units * 3)
+total_units <- peak_units + offpeak_units
+ 
+if(total_units > 300){
+bill <- bill * 1.10
+}
+return(bill)
+}
+smart_meter_bill(180, 150)
+
+              
+
+14:
+Insurance Premium Calculation System
+Scenario
+Insurance premium depends on:
+Base premium
+Age > 50 → 20% extra
+Smoker → 30% extra
+
+insurance_premium <- function(base, age, smoker){
+premium <- base
+if(age > 50){
+premium <- premium * 1.20
+}
+if(smoker){
+premium <- premium * 1.30
+}
+return(premium)
+}
+insurance_premium(5000, 55, TRUE)
+ 
+
+15:
+Employee Payroll Processing System
+Scenario
+A payroll system calculates:
+HRA = 20% of basic
+DA = 10% of basic
+Tax = 12% of gross salary
+
+payroll <- function(basic){
+hra <- basic * 0.20
+da <- basic * 0.10
+gross <- basic + hra + da
+tax <- gross * 0.12
+net <- gross - tax
+return(net)
+}
+payroll(40000)
+ 
+
+16:
+Smart City Water Usage Monitoring
+Scenario
+Water usage classification:
+≤ 500 litres → Normal
+501 1000 litres → High Usage
+1000 litres → Critical
+
+water_usage_status <- function(litres){
+if(litres <= 500){
+"Normal"
+} else if(litres <= 1000){
+"High Usage"
+} else {
+ 
+"Critical"
+}
+}
+water_usage_status(1200)
+
+              
+EXCERSICE 4:Implement data frames in R. Write a program to join columns and rows in a data frame
+
+1:
+College Student Record System
+Scenario
+A college stores student personal details and marks in separate tables.
+The administrator wants to combine both into a single dataset and later add new students.
+
+# Student details
+students <- data.frame(
+RollNo = c(101, 102, 103),
+Name = c("Ravi", "Meena", "Karthik"),
+Dept = c("CSE", "ECE", "IT")
+)
+ 
+# Student marks
+marks <- data.frame(
+Marks = c(78, 85, 90)
+)
+ 
+# Join columns
+student_data <- cbind(students, marks)
+student_data
+ 
+# Add new student records
+new_students <- data.frame(
+RollNo = c(104),
+Name = c("Anjali"),
+Dept = c("CSE"),
+Marks = c(88)
+)
+ 
+final_data <- rbind(student_data, new_students)
+final_data
+ 
+
+2:
+Employee Management System
+Scenario
+An HR department maintains employee details and salary details separately.
+They want a single consolidated data frame and later add new employees.
+Answer
+employee_details <- data.frame(
+EmpID = c(1, 2, 3),
+Name = c("Amit", "Sneha", "Raj"),
+Dept = c("HR", "IT", "Finance")
+)
+salary_details <- data.frame(
+Salary = c(35000, 45000, 50000)
+)
+# Join columns
+employees <- cbind(employee_details, salary_details)
+employees
+# Add new employee
+new_employee <- data.frame(
+EmpID = 4,
+Name = "Neha",
+Dept = "IT",
+Salary = 48000
+)
+employees <- rbind(employees, new_employee)
+employees
+
+              
+3:
+Hospital Patient Records
+Scenario
+A hospital stores patient details and treatment cost separately.
+The system must combine both and register new patients daily.
+Answer
+patient_info <- data.frame(
+PatientID = c(201, 202),
+Name = c("Suresh", "Lakshmi"),
+Age = c(45, 38)
+)
+ 
+treatment_cost <- data.frame(
+Cost = c(12000, 15000)
+)
+ 
+# Combine column-wise
+patient_records <- cbind(patient_info, treatment_cost)
+patient_records
+ 
+# Add new patient
+new_patient <- data.frame(
+PatientID = 203,
+Name = "Arjun",
+Age = 50,
+Cost = 18000
+)
+patient_records <- rbind(patient_records, new_patient)
+patient_records
+ 
+
+4:
+Product Inventory System
+Scenario
+A store maintains product details and stock information separately and wants to merge them.
+Answer
+products <- data.frame(
+ProductID = c(1, 2, 3),
+ProductName = c("Pen", "Book", "Bag")
+)
+stock <- data.frame(
+Quantity = c(100, 50, 30)
+)
+# Join columns
+inventory <- cbind(products, stock)
+inventory
+# Add new product
+new_product <- data.frame(
+ProductID = 4,
+ProductName = "Bottle",
+Quantity = 75
+)
+inventory <- rbind(inventory, new_product)
+inventory
+
+
+              
+(COMPLEX):
+5:
+University Academic Management System
+Scenario
+A university maintains three separate data frames:
+1. Student personal details
+2. Semester-wise marks
+3. Attendance percentage
+The administration wants a single consolidated student record, and later wants to add newly
+admitted students.
+Question
+Create multiple data frames and:
+1. Combine them column-wise
+2. Add new student records row-wise
+Answer (R Program)
+# Student details
+              students <- data.frame(
+RollNo = c(1, 2, 3),
+Name = c("Arun", "Bina", "Charan"),
+Dept = c("CSE", "ECE", "IT")
+)
+# Semester marks
+marks <- data.frame(
+Sem1 = c(78, 82, 90),
+Sem2 = c(80, 85, 88)
+)
+# Attendance
+attendance <- data.frame(
+Attendance = c(92, 88, 95)
+)
+# Combine all columns
+student_records <- cbind(students, marks, attendance)
+student_records
+ 
+# New admissions
+new_students <- data.frame(
+RollNo = c(4, 5),
+Name = c("Deepa", "Eshan"),
+Dept = c("CSE", "IT"),
+Sem1 = c(85, 89),
+Sem2 = c(87, 91),
+Attendance = c(90, 93)
+)
+# Add rows
+final_records <- rbind(student_records, new_students)
+final_records
+
+              
+6:
+Corporate Employee Payroll System
+Scenario
+A company stores data in multiple tables:
+Employee details
+Monthly salary components
+Performance ratings
+The HR department needs a merged payroll data frame and later adds new employees.
+Answer
+# Employee details
+emp_details <- data.frame(
+EmpID = c(101, 102),
+Name = c("Rahul", "Sneha"),
+Dept = c("IT", "HR")
+)
+# Salary components
+salary <- data.frame(
+Basic = c(30000, 35000),
+HRA = c(6000, 7000),
+DA = c(3000, 3500)
+)
+# Performance rating
+rating <- data.frame(
+Rating = c(4.5, 4.2)
+)
+# Merge column-wise
+payroll <- cbind(emp_details, salary, rating)
+payroll
+# Add new employee
+new_emp <- data.frame(
+EmpID = 103,
+Name = "Kiran",
+Dept = "Finance",
+Basic = 40000,
+HRA = 8000,
+DA = 4000,
+Rating = 4.8
+ 
+)
+payroll <- rbind(payroll, new_emp)
+payroll
+
+              
+
+7:
+Hospital Information System
+Scenario
+A hospital maintains:
+Patient personal data
+Diagnosis details
+Billing information
+All records must be consolidated into one data frame and updated daily.
+Answer
+# Patient details
+patients <- data.frame(
+PatientID = c(201, 202),
+Name = c("Suresh", "Lakshmi"),
+Age = c(45, 38)
+)
+# Diagnosis
+diagnosis <- data.frame(
+Disease = c("Diabetes", "Hypertension")
+)
+# Billing
+billing <- data.frame(
+Amount = c(15000, 12000)
+)
+# Combine all
+hospital_data <- cbind(patients, diagnosis, billing)
+hospital_data
+# New patient record
+new_patient <- data.frame(
+PatientID = 203,
+Name = "Arjun",
+Age = 52,
+Disease = "Cardiac",
+Amount = 25000
+)
+hospital_data <- rbind(hospital_data, new_patient)
+hospital_data
+ 
+
+8:
+Retail Sales Analytics System
+Scenario
+A retail chain stores:
+Product details
+Monthly sales quantity
+Revenue generated
+They want to consolidate sales analytics and add new products dynamically.
+Answer
+# Product details
+products <- data.frame(
+ProductID = c(1, 2, 3),
+ProductName = c("Mobile", "Laptop", "Tablet")
+)
+# Sales quantity
+sales_qty <- data.frame(
+UnitsSold = c(120, 80, 60)
+)
+# Revenue
+revenue <- data.frame(
+Revenue = c(1200000, 4000000, 1800000)
+)
+# Combine data
+sales_data <- cbind(products, sales_qty, revenue)
+sales_data
+# Add new product
+new_product <- data.frame(
+ProductID = 4,
+ 
+ProductName = "Smart Watch",
+UnitsSold = 90,
+Revenue = 900000
+)
+sales_data <- rbind(sales_data, new_product)
+sales_data
+              
+
+9:
+Smart Agriculture Monitoring System (Advanced) 
+�
+� Scenario
+An IoT-based agriculture system stores:
+Field information
+Sensor readings
+Yield estimation
+The data must be combined and updated as new fields are added.
+Answer
+# Field info
+field_info <- data.frame(
+FieldID = c(1, 2),
+Crop = c("Rice", "Wheat")
+)
+# Sensor data
+sensor_data <- data.frame(
+Moisture = c(45, 38),
+Temp = c(32, 29)
+)
+# Yield estimate
+yield <- data.frame(
+ExpectedYield = c(4.5, 3.8)
+)
+# Combine all
+agri_data <- cbind(field_info, sensor_data, yield)
+agri_data
+# New field
+new_field <- data.frame(
+FieldID = 3,
+Crop = "Maize",
+Moisture = 40,
+Temp = 31,
+ExpectedYield = 4.1
+)
+agri_data <- rbind(agri_data, new_field)
+agri_data
+ 
+Complex Scenario-Based Questions Using merge() in R
+
+              
+
+10:
+University Academic Management System
+Scenario
+Student details, marks, and attendance are stored in separate data frames.
+They must be joined using Roll Number.
+Answer
+students <- data.frame(
+RollNo = c(1, 2, 3),
+Name = c("Arun", "Bina", "Charan"),
+Dept = c("CSE", "ECE", "IT")
+)
+marks <- data.frame(
+RollNo = c(1, 2, 3),
+Sem1 = c(78, 82, 90),
+Sem2 = c(80, 85, 88)
+)
+attendance <- data.frame(
+ 
+RollNo = c(1, 2, 3),
+Attendance = c(92, 88, 95)
+)
+# Merge student details and marks
+student_data <- merge(students, marks, by = "RollNo")
+# Merge with attendance
+final_records <- merge(student_data, attendance, by = "RollNo")
+final_records
+✔ INNER JOIN based on RollNo
+
+              
+11:
+Corporate Employee Payroll System
+Scenario
+Employee information, salary details, and performance ratings are stored separately and joined
+using EmpID.
+Answer
+emp_details <- data.frame(
+EmpID = c(101, 102, 103),
+Name = c("Rahul", "Sneha", "Kiran"),
+Dept = c("IT", "HR", "Finance")
+)
+ 
+salary <- data.frame(
+EmpID = c(101, 102),
+Basic = c(30000, 35000),
+HRA = c(6000, 7000),
+DA = c(3000, 3500)
+)
+rating <- data.frame(
+EmpID = c(101, 103),
+Rating = c(4.5, 4.8)
+)
+# LEFT JOIN (keep all employees)
+payroll <- merge(emp_details, salary, by = "EmpID", all.x = TRUE)
+# Merge with ratings
+payroll <- merge(payroll, rating, by = "EmpID", all.x = TRUE)
+payroll
+✔ Demonstrates LEFT JOIN
+ 
+
+              
+12:
+Hospital Information System
+Scenario
+Patient details, diagnosis, and billing are stored in different tables and merged using PatientID.
+Answer
+patients <- data.frame(
+PatientID = c(201, 202, 203),
+Name = c("Suresh", "Lakshmi", "Arjun"),
+Age = c(45, 38, 52)
+)
+diagnosis <- data.frame(
+PatientID = c(201, 203),
+Disease = c("Diabetes", "Cardiac")
+)
+billing <- data.frame(
+PatientID = c(201, 202, 203),
+ 
+Amount = c(15000, 12000, 25000)
+)
+# Merge patients with diagnosis
+hospital_data <- merge(patients, diagnosis, by = "PatientID", all.x = TRUE)
+# Merge with billing
+hospital_data <- merge(hospital_data, billing, by = "PatientID")
+hospital_data
+✔ Combination of LEFT JOIN + INNER JOIN
+
+              
+
+13:
+Retail Sales Analytics System
+Scenario
+Product details, sales quantity, and revenue are stored separately and joined using ProductID.
+Answer
+products <- data.frame(
+ProductID = c(1, 2, 3, 4),
+ProductName = c("Mobile", "Laptop", "Tablet", "Smart Watch")
+)
+sales_qty <- data.frame(
+ProductID = c(1, 2, 3),
+UnitsSold = c(120, 80, 60)
+)
+revenue <- data.frame(
+ProductID = c(1, 2, 4),
+Revenue = c(1200000, 4000000, 900000)
+)
+# FULL JOIN
+sales_data <- merge(products, sales_qty, by = "ProductID", all = TRUE)
+sales_data <- merge(sales_data, revenue, by = "ProductID", all = TRUE)
+sales_data
+✔ Demonstrates FULL OUTER JOIN
+              
+ 
+
+14:
+Smart Agriculture Monitoring System (Advanced) 
+�
+�
+Scenario
+Field details, sensor readings, and yield estimates are stored separately and joined using FieldID.
+Answer
+field_info <- data.frame(
+FieldID = c(1, 2, 3),
+Crop = c("Rice", "Wheat", "Maize")
+)
+sensor_data <- data.frame(
+FieldID = c(1, 2),
+Moisture = c(45, 38),
+Temp = c(32, 29)
+)
+ 
+yield <- data.frame(
+FieldID = c(1, 3),
+ExpectedYield = c(4.5, 4.1)
+)
+# LEFT JOIN
+agri_data <- merge(field_info, sensor_data, by = "FieldID", all.x = TRUE)
+# LEFT JOIN with yield
+agri_data <- merge(agri_data, yield, by = "FieldID", all.x = TRUE)
+agri_data
+
+
+              
+EXCERSICE 5:Implement different String Manipulation functions in R.
+              
+
+1:
+Employee Name Standardization
+Scenario
+An organization stores employee names in different cases (uppercase, lowercase, mixed).
+The HR system needs to convert all names to uppercase and calculate the length of each name.
+Question
+Write an R program to standardize employee names and find their length.
+Answer
+names <- c("arun", "Bala", "chitra")
+upper_names <- toupper(names)
+name_length <- nchar(upper_names)
+upper_names
+name_length
+ 
+
+2:
+Student Email Processing
+Scenario
+A university stores student email IDs.
+The admin wants to extract only the username part (before @) from each email.
+Question
+Write an R program to extract usernames.
+Answer
+emails <- c("arun@gmail.com", "meena@yahoo.com", "ravi@outlook.com")
+usernames <- sub("@.*", "", emails)
+usernames
+ 
+
+3:
+Online Form Input Cleanup
+Scenario
+User input from online forms contains extra spaces at the beginning and end.
+The system must clean the input before saving.
+Question
+Write an R program to remove unwanted spaces.
+Answer
+input <- c(" R Programming ", " Data Science ", " AI ")
+clean_input <- trimws(input)
+clean_input
+ 
+
+4:
+Product Code Validation
+Scenario
+A store validates product codes that must start with "PRD".
+ 
+Question
+Write an R program to check product code validity.
+Answer
+product_codes <- c("PRD101", "PRD202", "ABC303")
+valid_codes <- startsWith(product_codes, "PRD")
+valid_codes
+
+              
+5:
+Text Replacement in Reports
+Scenario
+A report uses the word "error" multiple times.
+The admin wants to replace all occurrences with "issue".
+Question
+Write an R program to replace text.
+Answer
+report <- "error in file, error in system, error occurred"
+updated_report <- gsub("error", "issue", report)
+updated_report
+ 
+
+6:
+Password Strength Checker
+Scenario
+A system checks whether a password has at least 8 characters.
+Question
+Write an R program to validate password length.
+Answer
+password <- "secure123"
+if(nchar(password) >= 8){
+print("Strong Password")
+} else {
+print("Weak Password")
+}
+ 
+
+7:
+Sentence Word Count
+Scenario
+A content management system needs to count the number of words in a sentence.
+Question
+Write an R program to count words.
+Answer
+sentence <- "R is a powerful programming language"
+word_count <- length(strsplit(sentence, " ")[[1]])
+word_count
+ 
+
+8:
+File Extension Extraction
+Scenario
+A system needs to extract file extensions from filenames.
+Question
+Write an R program to extract file extensions.
+Answer
+ 
+files <- c("data.csv", "report.pdf", "image.png")
+extensions <- sub(".*\\.", "", files)
+extensions
+
+              
+9:
+Student Name Abbreviation
+Scenario
+The exam system displays student names using the first 3 characters.
+Question
+Write an R program to create name abbreviations.
+Answer
+names <- c("Gayathri", "Karthik", "Anitha")
+abbr <- substr(names, 1, 3)
+abbr
+ 
+
+10:
+Search Operation in Text
+Scenario
+A search engine finds names containing the letter "a".
+Question
+Write an R program using pattern matching.
+Answer
+names <- c("Arun", "Bala", "Ravi", "John")
+matched_names <- grep("a", names, value = TRUE)
+matched_names
+ 
+Complex String Cleaning Using Data Frames in R:
+
+11:
+University Student Data Cleaning System
+A university collects student data from multiple online forms.
+Due to manual entry:
+Names have extra spaces
+Emails are in mixed case
+Department codes are inconsistent (cse, CSE , Cse)
+Email usernames need to be extracted
+Only valid university emails (@univ.edu) should be retained
+Raw Data (Before Cleaning)
+students <- data.frame(
+Name = c(" Gayathri ", "RAVI ", " meena"),
+Email = c("Gayu@UNIV.edu", "ravi@univ.edu", "meena@gmail.com"),
+Department = c(" cse", "ECE ", " Cse ")
+)
+students
+#STep-by-Step String Cleaning
+
+ #Remove Extra Spaces (trimws())
+students$Name <- trimws(students$Name)
+students$Department <- trimws(students$Department)
+              
+ #Standardize Case (toupper() / tolower())
+students$Name <- toupper(students$Name)
+ 
+students$Email <- tolower(students$Email)
+students$Department <- toupper(students$Department)
+
+ #Extract Email Username (sub())
+students$Username <- sub("@.*", "", students$Email)
+
+ #Validate University Emails (grepl())
+students$ValidEmail <- grepl("@univ.edu$", students$Email)
+
+ #Filter Only Valid Records
+clean_students <- students[students$ValidEmail == TRUE, ]
+clean_students
+
+              
+
+12:
+Product Inventory Text Cleaning
+Scenario
+A store database contains inconsistent product names and categories.
+Goal
+Remove extra spaces
+Convert names to Title Case
+Extract product codes
+Program
+products <- data.frame(
+Product = c(" apple phone ", "SAMSUNG-TV ", " dell laptop"),
+Code = c("PRD-101-APL", "PRD-202-SAM", "PRD-303-DEL")
+)
+products$Product <- trimws(products$Product)
+products$Product <- tools::toTitleCase(tolower(products$Product))
+products$ProductCode <- sub("PRD-[0-9]+-", "", products$Code)
+products
+
+ 
+
+13:
+Social Media Comment Moderation System
+Scenario
+A platform wants to detect and replace banned words in user comments.
+Program
+comments <- data.frame(
+User = c("A", "B", "C"),
+Comment = c(
+"This app is bad",
+"Very BAD experience",
+"Not bad at all"
+)
+)
+comments$Comment <- tolower(comments$Comment)
+comments$CleanComment <- gsub("bad", "unacceptable", comments$Comment)
+comments
+ 
+EXCERSICE 6:Implement different data structures in R (Vectors, Lists, Data Frames)
+
+1:
+Student Marks Processing (Vectors)
+Scenario
+A lecturer stores marks of students in a single subject and wants to calculate:
+Total marks
+Average marks
+Highest marks
+Question
+Which data structure is suitable and how is it implemented in R?
+Answer
+Vector is suitable because all values are of the same data type.
+marks <- c(78, 85, 90, 88, 76)
+total <- sum(marks)
+average <- mean(marks)
+highest <- max(marks)
+total
+average
+highest
+ 
+
+2:
+Temperature Monitoring System (Vectors)
+Scenario
+A weather station records daily temperatures for a week.
+Answer
+temperature <- c(32, 33, 31, 34, 35, 36, 33)
+ 
+min_temp <- min(temperature)
+max_temp <- max(temperature)
+ 
+min_temp
+ 
+max_temp
+
+              
+3:
+Employee Profile Storage (Lists)
+Scenario
+An HR system needs to store mixed data types for an employee:
+Employee ID
+Name
+Salary
+Department
+Question
+Which data structure should be used?
+Answer
+List is suitable because it supports different data types.
+employee <- list(
+ID = 101,
+Name = "Gayathri",
+Salary = 45000,
+Department = "IT"
+)
+employee
+employee$Name
+employee$Salary
+ 
+
+4:
+Patient Medical Record System (Lists)
+Scenario
+A hospital stores patient details along with multiple test results.
+Answer
+patient <- list(
+PatientID = 202,
+Name = "Ravi",
+Age = 45,
+TestResults = c(120, 140, 130)
+)
+patient
+patient$TestResults
+
+              
+5:
+College Student Database (Data Frames)
+Scenario
+A college wants to store student information in tabular form:
+Roll number
+Name
+Department
+Marks
+Answer
+Data frame is best for structured tabular data.
+students <- data.frame(
+ 
+RollNo = c(1, 2, 3),
+Name = c("Anitha", "Karthik", "Meena"),
+Dept = c("CSE", "ECE", "IT"),
+Marks = c(85, 78, 92)
+)
+students
+
+              
+6:
+Sales Report System (Data Frames)
+Scenario
+A company stores monthly sales data and calculates total sales.
+Answer
+sales <- data.frame(
+Month = c("Jan", "Feb", "Mar"),
+Sales = c(50000, 62000, 58000)
+)
+total_sales <- sum(sales$Sales)
+total_sales
+ 
+
+7:
+E-Commerce Order System (Combination of Data Structures)
+Scenario
+An e-commerce system:
+Stores item prices (vector)
+Stores customer details (list)
+Stores order summary (data frame)
+Answer
+prices <- c(1200, 850, 560)
+customer <- list(
+CustomerID = 301,
+Name = "Anjali",
+City = "Chennai"
+)
+orders <- data.frame(
+Item = c("Phone", "Headset", "Charger"),
+Price = prices
+)
+prices
+customer
+orders
+
+
+8:
+Online Exam System
+Scenario
+An online exam platform:
+Stores marks of each subject (vector)
+Stores student profile (list)
+Stores class results (data frame)
+Answer
+ 
+subject_marks <- c(78, 85, 88)
+student_profile <- list(
+Name = "Arun",
+RollNo = 105,
+Marks = subject_marks
+)
+class_results <- data.frame(
+RollNo = c(101, 102, 103),
+Total = c(240, 255, 270)
+)
+student_profile
+class_results
+
+              
+9:
+Bank Account Management
+Scenario
+A bank system stores:
+Daily balances (vector)
+Customer details (list)
+Transaction history (data frame)
+Answer
+balances <- c(5000, 5200, 5100)
+customer <- list(
+AccountNo = 12345,
+Name = "Suresh"
+)
+transactions <- data.frame(
+Date = c("01-01", "02-01", "03-01"),
+Amount = c(-500, 1000, -200)
+)
+balances
+customer
+transactions
+ 
+
+10:
+Real-World Summary Question (Exam-Perfect)
+Question
+Explain with an example how vectors, lists, and data frames are used in a real-world application.
+Answer
+Vector stores homogeneous data (marks, prices)
+List stores heterogeneous data (profiles)
+Data Frame stores structured tabular data (records)
+scores <- c(85, 90, 88)
+profile <- list(
+Name = "Gayathri",
+Age = 21,
+Scores = scores
+ 
+)
+records <- data.frame(
+Subject = c("Math", "CS", "Physics"),
+Marks = scores
+)
+              
+EXCERSICE 7:Write a program to read a csv file and analyze the data in the file in R
+
+            
+1:
+A retail store maintains a CSV file sales_data.csv with the following columns:
+Date Product Category QuantityPrice
+2026-01-01Phone Electronics 5 20000
+2026-01-01Bag Accessories10 1500
+2026-01-02Laptop Electronics 3 50000
+2026-01-02HeadsetElectronics 7 2500
+2026-01-03Bag Accessories5 1500
+2026-01-03Phone Electronics 3 20000
+Goal:
+1. Load the CSV file
+2. Clean and explore the data
+3. Calculate total sales per product and per category
+4. Identify the top-selling product
+5. Summarize total quantity sold per category
+CODE:
+# Read the CSV file
+sales <- read.csv("sales_data.csv")
+# View first few rows
+head(sales)
+# Check structure and summary
+str(sales)
+summary(sales)
+
+# Remove extra spaces in Product and Category columns
+sales$Product <- trimws(sales$Product)
+sales$Category <- trimws(sales$Category)
+# Convert Date column to Date format
+sales$Date <- as.Date(sales$Date, format="%Y-%m-%d")
+# Add a column for total sales per row
+sales$TotalSales <- sales$Quantity * sales$Price
+# View cleaned data
+head(sales)
+# Calculate total sales for each product
+total_sales_product <- aggregate(TotalSales ~ Product, data=sales, sum)
+ 
+total_sales_product
+
+
+top_product <- total_sales_product[which.max(total_sales_product$TotalSales), ]
+top_product
+
+
+quantity_per_category <- aggregate(Quantity ~ Category, data=sales, sum)
+quantity_per_category
+
+# Products with total sales greater than 10000
+high_sales <- total_sales_product[total_sales_product$TotalSales > 10000, ]
+high_sales
+# Save total sales per product to CSV
+write.csv(total_sales_product, "total_sales_product.csv", row.names = FALSE)
+Functions Used
+Function
+read.csv()
+head()
+str()
+summary()
+trimws()
+as.Date()
+
+              
+EXCERSICE 8: Create pie charts and bar charts using R.
+
+1:
+University Course Enrollment
+Scenario
+A university wants to visualize the number of students enrolled in different departments
+DepartmentStudents
+CSE 120
+ECE 80
+IT 60
+Mechanical 40
+Tasks
+1. Create a pie chart showing the percentage of students in each department.
+2. Create a bar chart showing the number of students in each department.
+R Program
+# Data
+departments <- c("CSE", "ECE", "IT", "Mechanical")
+students <- c(120, 80, 60, 40)
+# Pie Chart
+pie(
+students,
+labels = departments,
+main = "Student Enrollment per Department",
+col = c("skyblue", "orange", "green", "pink")
+)
+# Bar Chart
+barplot(
+students,
+names.arg = departments,
+main = "Number of Students per Department",
+xlab = "Department",
+ylab = "Number of Students",
+col = c("skyblue", "orange", "green", "pink")
+)
+ 
+
+2:
+: Retail Store Sales Distribution
+Scenario
+A retail store wants to visualize sales by category:
+ 
+Category Sales
+Electronics 150000
+Clothing 75000
+Accessories 50000
+Home Appliances25000
+Tasks
+1. Pie chart for sales percentage per category
+2. Bar chart for sales per category
+              
+R Program:
+# Data
+category <- c("Electronics", "Clothing", "Accessories", "Home Appliances")
+sales <- c(150000, 75000, 50000, 25000)
+# Pie Chart
+pie(
+sales,
+labels = category,
+main = "Sales Distribution by Category",
+col = rainbow(length(category))
+)
+# Bar Chart
+barplot(
+sales,
+names.arg = category,
+main = "Sales per Category",
+xlab = "Category",
+ylab = "Sales (₹)",
+col = rainbow(length(category))
+)
+
+              
+3:
+Online Exam Result Analysis
+Scenario
+An online exam platform wants to visualize the grades of students:
+GradeCount
+A 15
+B 25
+C 30
+D 10
+Tasks
+1. Create a pie chart showing grade distribution
+2. Create a bar chart showing number of students per grade
+              
+R Program:
+# Data
+grades <- c("A", "B", "C", "D")
+ 
+count <- c(15, 25, 30, 10)
+# Pie Chart
+pie(
+count,
+labels = grades,
+main = "Grade Distribution",
+col = c("gold", "lightblue", "pink", "lightgreen")
+)
+# Bar Chart
+barplot(
+count,
+names.arg = grades,
+main = "Number of Students per Grade",
+xlab = "Grade",
+ylab = "Number of Students",
+col = c("gold", "lightblue", "pink", "lightgreen")
+)
+
+              
+4:
+Company Employee Experience Levels
+Scenario
+A company wants to visualize employee experience levels:
+ExperienceEmployees
+0-2 years 50
+3-5 years 80
+6-10 years 40
+10+ years 30
+              
+R Program:
+# Data
+experience <- c("0-2 years", "3-5 years", "6-10 years", "10+ years")
+employees <- c(50, 80, 40, 30)
+ 
+# Pie Chart
+pie(
+employees,
+labels = experience,
+main = "Employee Experience Distribution",
+col = c("skyblue", "orange", "green", "pink")
+)
+ 
+# Bar Chart
+barplot(
+employees,
+names.arg = experience,
+ 
+main = "Number of Employees by Experience",
+xlab = "Experience Level",
+ylab = "Number of Employees",
+col = c("skyblue", "orange", "green", "pink")
+)
+
+5:
+Agricultural Crop Production
+Scenario
+A farm wants to visualize production of different crops (in tonnes):
+Crop Production
+Rice 200
+Wheat150
+Maize 100
+Onion 50
+              
+R Program:
+# Data
+crop <- c("Rice", "Wheat", "Maize", "Onion")
+production <- c(200, 150, 100, 50)
+# Pie Chart
+pie(
+production,
+labels = crop,
+main = "Crop Production Distribution",
+col = c("gold", "green", "orange", "brown")
+)
+# Bar Chart
+barplot(
+production,
+names.arg = crop,
+main = "Crop Production in Tonnes",
+xlab = "Crop",
+ylab = "Production (Tonnes)",
+col = c("gold", "green", "orange", "brown")
+)
+ 
+EXCERSICE 9: Create a data set and do statistical analysis on the data using R
+
+1:
+School Student Marks Analysis
+Scenario
+A teacher wants to analyze marks of students in a class. She collects marks for Maths, Science, and
+English for 10 students.
+Tasks:
+1. Create a dataset in R.
+2. Calculate mean, median, and standard deviation of marks for each subject.
+3. Identify the student with highest total marks.
+4. Find students scoring above average in Maths
+              R Program:
+# Step 1: Create dataset
+students <- data.frame(
+Name =
+c("Arjun","Meena","Rahul","Anitha","Kiran","Sneha","Ravi","Gayathri","Suresh","Lakshmi"),
+Maths = c(85,90,70,95,80,88,75,92,68,86),
+Science = c(78,88,60,92,85,80,70,90,75,82),
+English = c(92,80,75,98,88,85,78,91,80,87)
+)
+ 
+# Step 2: Mean, Median, SD
+mean_marks <- sapply(students[ ,2:4], mean)
+median_marks <- sapply(students[ ,2:4], median)
+sd_marks <- sapply(students[ ,2:4], sd)
+# Step 3: Total marks per student
+students$Total <- rowSums(students[ ,2:4])
+top_student <- students[which.max(students$Total), ]
+# Step 4: Students above average in Maths
+avg_math <- mean(students$Maths)
+above_avg_math <- students[students$Maths > avg_math, ]
+mean_marks
+median_marks
+sd_marks
+top_student
+above_avg_math
+
+              
+2:
+Retail Sales Data Analysis
+Scenario
+A store wants to analyze daily sales for 7 products over a week.
+Tasks:
+1. Create a dataset.
+2. Find mean, max, min, variance of sales for each product.
+3. Identify the product with maximum average sales.
+              
+R Program:
+# Step 1: Create dataset
+sales <- data.frame(
+Product = c("Phone","Laptop","Headset","Bag","Camera","Mouse","Keyboard"),
+Day1 = c(5,3,7,10,2,8,6),
+Day2 = c(4,2,8,12,3,7,5),
+Day3 = c(6,4,6,8,1,9,7),
+Day4 = c(5,3,7,11,2,6,6),
+Day5 = c(7,5,5,9,3,8,8)
+)
+ 
+ 
+# Step 2: Mean, Max, Min, Variance per product
+sales_stats <- data.frame(
+Product = sales$Product,
+Mean = apply(sales[ ,2:6], 1, mean),
+Max = apply(sales[ ,2:6], 1, max),
+Min = apply(sales[ ,2:6], 1, min),
+Variance = apply(sales[ ,2:6], 1, var)
+)
+# Step 3: Product with max average sales
+max_avg_product <- sales_stats[which.max(sales_stats$Mean), ]
+sales_stats
+max_avg_product
+
+              
+3:
+: Hospital Patient Age Analysis
+Scenario
+A hospital wants to analyze the ages of patients admitted in a week.
+Tasks:
+1. Create a dataset with PatientID, Name, Age.
+2. Calculate mean, median, range, and standard deviation of ages.
+3. Identify patients older than 50.
+              
+R Program:
+# Dataset
+patients <- data.frame(
+PatientID = 201:210,
+Name = c("Suresh","Lakshmi","Arjun","Meena","Ravi","Anitha","Kiran","Sneha","Gayathri","Ravi2"),
+Age = c(45,38,52,29,60,48,55,35,42,50)
+)
+ 
+# Statistical analysis
+mean_age <- mean(patients$Age)
+median_age <- median(patients$Age)
+range_age <- range(patients$Age)
+sd_age <- sd(patients$Age)
+# Patients older than 50
+older_patients <- patients[patients$Age > 50, ]
+mean_age
+median_age
+range_age
+sd_age
+older_patients
+ 
+
+4:
+Employee Salary Analysis
+Scenario
+A company wants to analyze employee salaries in different departments.
+Tasks:
+ 
+1. Create dataset with EmpID, Name, Dept, Salary.
+2. Calculate mean and median salary per department.
+3. Identify employees earning above overall average salary.
+              
+R Program:
+# Dataset
+employees <- data.frame(
+EmpID = 101:110,
+Name =
+c("Rahul","Sneha","Kiran","Anitha","Ravi","Gayathri","Suresh","Lakshmi","Arjun","Meena"),
+Dept = c("IT","HR","Finance","IT","HR","Finance","IT","HR","Finance","IT"),
+Salary = c(30000,35000,40000,32000,36000,42000,31000,37000,45000,33000)
+)
+# Mean and Median per department
+dept_stats <- aggregate(Salary ~ Dept, data=employees, function(x) c(Mean=mean(x),
+Median=median(x)))
+dept_stats <- do.call(data.frame, dept_stats)
+# Employees earning above overall average
+overall_avg <- mean(employees$Salary)
+high_earners <- employees[employees$Salary > overall_avg, ]
+dept_stats
+high_earners
+
+                        
+5:
+Online Store Customer Ratings
+Scenario
+An online store collects customer ratings (1 5) for 10 products.
+Tasks:
+1. Create a dataset with ProductID, Product, Rating.
+2. Calculate mean, median, mode, and variance of ratings.
+3. Identify products with rating above 4.
+                        
+R Program:
+# Dataset
+ratings <- data.frame(
+ProductID = 1:10,
+Product =
+c("Phone","Laptop","Headset","Bag","Camera","Mouse","Keyboard","Charger","Tablet","Speaker"),
+Rating = c(4,5,3,4,5,4,3,5,4,4)
+)
+# Mean, Median, Variance
+mean_rating <- mean(ratings$Rating)
+median_rating <- median(ratings$Rating)
+var_rating <- var(ratings$Rating)
+# Mode function
+getmode <- function(v) {
+uniqv <- unique(v)
+uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+mode_rating <- getmode(ratings$Rating)
+# Products with rating > 4
+top_rated <- ratings[ratings$Rating > 4, ]
+mean_rating
+median_rating
+mode_rating
+var_rating
+top_rated
+              
